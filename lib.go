@@ -18,3 +18,13 @@ func IsSameDay(time1 time.Time, time2 time.Time) bool {
 
 	return false
 }
+
+func Tomorrow() time.Time {
+
+	return time.Now().Add(24 * time.Hour)
+}
+
+func Yesterday() time.Time {
+
+	return time.Now().Add(-(24 * time.Hour))
+}

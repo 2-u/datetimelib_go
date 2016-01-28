@@ -19,3 +19,19 @@ func TestIsSameDay(t *testing.T) {
 
 	t.Errorf("Error: Testing CalcIsSameDay")
 }
+
+func TestTomorrow(t *testing.T) {
+
+	tomorrow := Tomorrow()
+	t.Log("tomorrow =", tomorrow)
+
+	t.Errorf("Error: Testing Tomorow")
+}
+
+func TestYesterday(t *testing.T) {
+
+	yesterday := Yesterday()
+	t.Log("yesterday =", yesterday)
+
+	t.Errorf("Error: Testing Yesterday")
+}
