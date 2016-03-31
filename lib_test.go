@@ -35,3 +35,19 @@ func TestYesterday(t *testing.T) {
 
 	t.Errorf("Error: Testing Yesterday")
 }
+
+func TestGetCurrentWeeklyOptionsExpirationDate(t *testing.T) {
+
+	out := GetCurrentWeeklyOptionsExpirationDate()
+	t.Log("GetCurrentWeeklyOptionsExpirationDate()=", out)
+
+	t.Errorf("Error: Testing GetCurrentWeeklyOptionsExpirationDate")
+}
+
+func TestGetNextWeeklyOptionsExpirationDate(t *testing.T) {
+
+	out := GetNextWeeklyOptionsExpirationDate()
+	t.Log("GetNextWeeklyOptionsExpirationDate()=", out)
+
+	t.Errorf("Error: Testing GetNextWeeklyOptionsExpirationDate")
+}
